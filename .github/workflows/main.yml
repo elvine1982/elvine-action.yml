@@ -15,8 +15,8 @@ jobs:
       - name: Set up AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          aws-access-key-id: ${{ AKIAQTQJQ65HS6HCYEVE }}
-          aws-secret-access-key: ${{ 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 }}
+          aws-access-key-id: ${{ AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
       - name: Create EC2 instance
